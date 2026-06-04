@@ -3,12 +3,6 @@ from pathlib import Path
 
 
 def write_output_json(results: dict, output_file: str = "output.json"):
-    """
-    Write the final output to a JSON file in the required PRD format.
-
-    results: dict of {filename: {"class": ..., "fields": {...}}}
-    output_file: path to write JSON file
-    """
     output_dict = {}
 
     for filename, info in results.items():

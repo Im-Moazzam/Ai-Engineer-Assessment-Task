@@ -44,7 +44,6 @@ def main():
                 "fields": fields
             }
 
-            # Keep text in memory for semantic search
             if text_for_extraction.strip():
                 docs_for_retrieval.append({
                     "filename": name,
@@ -58,11 +57,9 @@ def main():
             f"Classification and field extraction complete. Output saved to {args.output}")
 
     if args.query:
-        # Lazy import to avoid loading model when not querying
         from retrieval.search import build_index, query_index
 
         if not docs_for_retrieval:
-            # If no process was run, load raw text from input folder
             folder_path = Path(args.input)
             documents = load_documents(folder_path)
             for name, content in documents.items():
