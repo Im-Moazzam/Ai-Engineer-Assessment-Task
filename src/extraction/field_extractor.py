@@ -46,20 +46,17 @@ def extract_resume_fields(text):
     data['phone'] = match.group(1).strip() if match else None
 
     # Name (assume the line before email)
-    lines = text.splitlines()
-    for i, line in enumerate(lines):
-        if 'email:' in line.lower() and i > 0:
-            data['name'] = lines[i-1].strip()
-            break
-    else:
-        data['name'] = None
+    match = re.search(
+        r'([A-Z][a-z]+(?:\s[A-Z][a-z]+)*)\s*Email\s*:', text, re.I)
+
+
+    data['name'] = match.group(1).strip() if match else None
 
     # Experience years
     match = re.search(r'experience\s*:\s*(\d+)\s*years?', text, re.I)
     data['experience_years'] = int(match.group(1)) if match else None
 
     return data
-
 
 def extract_utility_bill_fields(text):
     data = {}
@@ -90,8 +87,6 @@ def extract_utility_bill_fields(text):
         1).replace(',', '')) if match else None
 
     return data
-
-
 
 def extract_fields(doc_class: str, text: str) -> dict:
     if doc_class == "Invoice":

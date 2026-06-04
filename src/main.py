@@ -1,8 +1,8 @@
 from pathlib import Path
-from field_extractor import extract_fields
+from extraction.field_extractor import extract_fields
 from utils.output_parser import write_output_json
 from utils.utils import load_documents
-from classifier import classify_document
+from classification.classifier import classify_document
 
 
 if __name__ == "__main__":

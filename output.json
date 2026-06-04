@@ -47,35 +47,35 @@
     "class": "Resume",
     "email": "john.doe@example.com",
     "phone": "+1-555-799-6125",
-    "name": null,
+    "name": "john doe",
     "experience_years": 5
   },
   "resume_2.pdf": {
     "class": "Resume",
     "email": "jane.smith@example.com",
     "phone": "+1-555-486-5877",
-    "name": null,
+    "name": "jane smith",
     "experience_years": 1
   },
   "resume_3.pdf": {
     "class": "Resume",
     "email": "ali.khan@example.com",
     "phone": "+1-555-980-6266",
-    "name": null,
+    "name": "ali khan",
     "experience_years": 4
   },
   "resume_4.pdf": {
     "class": "Resume",
     "email": "maria.garcia@example.com",
     "phone": "+1-555-233-1405",
-    "name": null,
+    "name": "maria garcia",
     "experience_years": 1
   },
   "resume_5.pdf": {
     "class": "Resume",
     "email": "david.lee@example.com",
     "phone": "+1-555-305-2284",
-    "name": null,
+    "name": "david lee",
     "experience_years": 2
   },
   "unclassifiable_1.pdf": {
