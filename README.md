@@ -12,7 +12,7 @@ Doc Classifier AI is a **fully local document understanding system** that:
 * Runs entirely offline with open-source tools
 * Supports CLI-based interaction
 
-**Optional features** such as local QA and a Streamlit UI are **not included** in this version.
+**Optional features** such as local QA and UI are **not included** in this version.
 
 ---
 
@@ -20,7 +20,7 @@ Doc Classifier AI is a **fully local document understanding system** that:
 
 ```
 Doc Classifier AI/
-├── data/                     # Input documents (PDF/TXT)
+├── data/                     # Input documents (PDF)
 ├── src/
 │   ├── main.py               # CLI entry point
 │   ├── classification/
@@ -40,8 +40,8 @@ Doc Classifier AI/
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
-cd Doc\ Classifier\ AI
+git clone https://github.com/Im-Moazzam/Ai-Engineer-Assessment-Task
+cd Ai-Engineer-Assessment-Task
 ```
 
 2. Create a virtual environment:
@@ -53,13 +53,6 @@ python -m venv .venv
 3. Activate the virtual environment:
 
 * **PowerShell**:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
-& ".\.venv\Scripts\Activate.ps1"
-```
-
-* **Command Prompt**:
 
 ```cmd
 .venv\Scripts\activate.bat
@@ -83,7 +76,7 @@ Process all documents in the `data/` folder and generate `output.json`:
 python src/main.py --process --input data --output output.json
 ```
 
-* **--input** → path to folder containing PDF/TXT documents (default: `data`)
+* **--input** → path to folder containing PDF documents (default: `data`)
 * **--output** → path to save the JSON output (default: `output.json`)
 * Output format example:
 
@@ -186,4 +179,3 @@ python src/main.py --process --query "payments due in January"
 ```
 
 ---
-
