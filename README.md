@@ -1,4 +1,4 @@
-# **Doc Classifier AI**
+# **Doc Classifier AI - Moazzam Ai Engineer**
 
 ## **Project Overview**
 
@@ -179,3 +179,13 @@ python src/main.py --process --query "payments due in January"
 ```
 
 ---
+
+## 📞 Contact
+
+GitHub: [@Im-Moazzam](https://github.com/Im-Moazzam)
+Email: [moazzamaleem786@gmail.com](mailto:moazzamaleem786@gmail.com)
+LinkedIn: [Muhammad Moazzam](https://www.linkedin.com/in/im-moazzam/)
+
+⭐ Star this repository if you found it helpful!
+
+Made with ❤️ and lots of ☕
