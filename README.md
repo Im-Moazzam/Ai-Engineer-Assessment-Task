@@ -4,7 +4,7 @@
 
 Doc Classifier AI is a **fully local document understanding system** that:
 
-* Classifies PDFs and TXT documents into predefined categories:
+* Classifies PDF documents into predefined categories:
 
   * Invoice, Resume, Utility Bill, Other, Unclassifiable
 * Extracts structured fields per document type
